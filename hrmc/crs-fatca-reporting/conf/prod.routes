@@ -1,3 +1,0 @@
-# Add all the application routes to the app.routes file
-->         /crs-fatca-reporting              app.Routes
-->         /                          health.Routes

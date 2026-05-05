@@ -1,8 +1,0 @@
-{
-  "exclusions": [
-    {
-      "path": "/test-only/",
-      "reason": "Test-only endpoints do not need accessibility testing as they are used purely for testing purposes."
-    }
-  ]
-}
