@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CBC_OECD xmlns="urn:oecd:ties:cbc:v2" xmlns:urn1="urn:oecd:ties:cbcstf:v5">
+    <MessageSpec>
+        <!--Optional:-->
+        <SendingEntityIN>string</SendingEntityIN>
+        <TransmittingCountry>XK</TransmittingCountry>
+        <!--1 or more repetitions:-->
+        <ReceivingCountry>PY</ReceivingCountry>
+        <MessageType>CBC</MessageType>
+        <!--Optional:-->
+        <Language>KR</Language>
+        <!--Optional:-->
+        <Warning>string</Warning>
+        <!--Optional:-->
+        <Contact>string</Contact>
+        <MessageRefId>GBXACBC0000123778-This is my message ref id</MessageRefId>
+        <MessageTypeIndic>CBC401</MessageTypeIndic>
+        <!--Zero or more repetitions:-->
+        <CorrMessageRefId>string</CorrMessageRefId>
+        <ReportingPeriod>2014-06-09+01:00</ReportingPeriod>
+        <Timestamp>2008-11-15T16:52:58</Timestamp>
+    </MessageSpec>
+    <!--1 or more repetitions:-->
+    <CbcBody>
+        <ReportingEntity>
+            <Entity>
+                <!--1 or more repetitions:-->
+                <ResCountryCode>DJs</ResCountryCode>
+                <TIN issuedBy="MDs">string</TIN>
+                <!--Zero or more repetitions:-->
+                <IN issuedBy="VI" INType="">string</IN>
+                <!--1 or more repetitions:-->
+                <Name>qwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop</Name>
+                <!--Zero or more repetitions:-->
+                <Address legalAddressType="1OECD303">
+                    <CountryCode>YTss</CountryCode>
+                    <AddressFix>
+                        <!--Optional:-->
+                        <Street>qwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop</Street>
+                        <!--Optional:-->
+                        <BuildingIdentifier></BuildingIdentifier>
+                        <!--Optional:-->
+                        <SuiteIdentifier>qwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop</SuiteIdentifier>
+                        <!--Optional:-->
+                        <FloorIdentifier></FloorIdentifier>
+                        <!--Optional:-->
+                        <DistrictName>qwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop</DistrictName>
+                        <!--Optional:-->
+                        <POB>qwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop</POB>
+                        <!--Optional:-->
+                        <PostCode></PostCode>
+
+                        <!--Optional:-->
+                        <CountrySubentity>String</CountrySubentity>
+                    </AddressFix>
+                </Address>
+            </Entity>
+            <!--Optional:-->
+            <NameMNEGroup>qwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop</NameMNEGroup>
+            <ReportingRole>wCBC704</ReportingRole>
+            <ReportingPeriod>
+                <StartDate></StartDate>
+                <EndDate>2012-09-31</EndDate>
+            </ReportingPeriod>
+            <DocSpec>
+                <urn1:DocTypeIndic>xOECD1</urn1:DocTypeIndic>
+                <urn1:DocRefId>qwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop</urn1:DocRefId>
+                <!--Optional:-->
+                <urn1:CorrMessageRefId></urn1:CorrMessageRefId>
+                <!--Optional:-->
+                <urn1:CorrDocRefId>qwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop</urn1:CorrDocRefId>
+            </DocSpec>
+        </ReportingEntity>
+        <!--Zero or more repetitions:-->
+        <CbcReports>
+            <DocSpec>
+                <urn1:DocTypeIndic>dOECD2</urn1:DocTypeIndic>
+                <urn1:DocRefId>qwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop</urn1:DocRefId>
+                <!--Optional:-->
+                <urn1:CorrMessageRefId></urn1:CorrMessageRefId>
+                <!--Optional:-->
+                <urn1:CorrDocRefId>qwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop</urn1:CorrDocRefId>
+            </DocSpec>
+            <ResCountryCode>IdM</ResCountryCode>
+            <Summary>
+                <Revenues>
+                    <Unrelated currCode="XAdG">100</Unrelated>
+                    <Related currCode="MMK">0.2</Related>
+                    <Total currCode="XPF">qwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop</Total>
+                </Revenues>
+                <ProfitOrLoss currCode="FJD"></ProfitOrLoss>
+                <TaxPaid currCode="MXNs">100</TaxPaid>
+                <TaxAccrued currCode="">100</TaxAccrued>
+                <Capital currCode="MNT">.01</Capital>
+                <Earnings currCode="EGP"></Earnings>
+                <NbEmployees>qwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop</NbEmployees>
+
+            </Summary>
+            <!--1 or more repetitions:-->
+            <ConstEntities>
+                <ConstEntity>
+                    <!--1 or more repetitions:-->
+                    <ResCountryCode>GDz</ResCountryCode>
+                    <TIN issuedBy="CN">=</TIN>
+                    <!--Zero or more repetitions:-->
+                    <IN issuedBy="" INType="string">string</IN>
+                    <!--1 or more repetitions:-->
+                    <Name>qwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop</Name>
+                    <!--Zero or more repetitions:-->
+                    <Address legalAddressType="OECD301s">
+                        <CountryCode></CountryCode>
+                        <AddressFix>
+                            <!--Optional:-->
+                            <Street></Street>
+                            <!--Optional:-->
+                            <BuildingIdentifier>qwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop</BuildingIdentifier>
+                            <!--Optional:-->
+                            <SuiteIdentifier></SuiteIdentifier>
+                            <!--Optional:-->
+                            <FloorIdentifier>qwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop</FloorIdentifier>
+                            <!--Optional:-->
+                            <DistrictName></DistrictName>
+                            <!--Optional:-->
+                            <POB>qwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop</POB>
+                            <!--Optional:-->
+                            <PostCode></PostCode>
+
+                            <!--Optional:-->
+                            <CountrySubentity>string</CountrySubentity>
+                        </AddressFix>
+                        <!--Optional:-->
+                        <AddressFree>qwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop</AddressFree>
+                    </Address>
+                </ConstEntity>
+                <!--Optional:-->
+                <Role>CBC8d02</Role>
+                <!--Optional:-->
+                <IncorpCountryCode></IncorpCountryCode>
+                <!--1 or more repetitions:-->
+                <BizActivities>CBC50c5</BizActivities>
+                <!--Optional:-->
+                <OtherEntityInfo>qwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop</OtherEntityInfo>
+            </ConstEntities>
+        </CbcReports>
+        <!--Zero or more repetitions:-->
+        <AdditionalInfo>
+            <DocSpec>
+                <urn1:DocTypeIndic>OECD02</urn1:DocTypeIndic>
+                <urn1:DocRefId>qwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop</urn1:DocRefId>
+                <!--Optional:-->
+                <urn1:CorrMessageRefId></urn1:CorrMessageRefId>
+                <!--Optional:-->
+                <urn1:CorrDocRefId>qwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop</urn1:CorrDocRefId>
+            </DocSpec>
+            <!--1 or more repetitions:-->
+            <OtherInfo language="HZ"></OtherInfo>
+            <!--Zero or more repetitions:-->
+            <ResCountryCode>SMd</ResCountryCode>
+            <!--Zero or more repetitions:-->
+
+        </AdditionalInfo>
+    </CbcBody>
+</CBC_OECD>

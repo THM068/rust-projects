@@ -1,0 +1,23 @@
+{% extends "index.html" %}
+
+{% block main %}
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        <h1 class="mt-4 mb-4">Create Ledger</h1>
+        <div class="card">
+            <div class="card-header">
+                Enter Ledger Details
+            </div>
+            <div class="card-body">
+                <form action="/create-ledger" method="post">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Create Ledger</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

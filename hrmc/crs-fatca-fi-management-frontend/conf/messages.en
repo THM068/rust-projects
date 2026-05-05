@@ -1,0 +1,476 @@
+service.name = Send a CRS or FATCA report
+service.title.suffix = Send a CRS or FATCA report
+
+site.back = Back
+site.remove = Remove
+site.change = Change
+site.no = No
+site.yes = Yes
+site.continue = Continue
+site.start = Start now
+site.startAgain = Start again
+site.signIn = Sign in
+site.govuk = GOV.UK
+site.notProvided = Not provided
+
+date.day = Day
+date.month = Month
+date.year = Year
+
+timeout.title = You’re about to be signed out
+timeout.message = For your security, we will sign you out in
+timeout.keepAlive = Stay signed in
+timeout.signOut = Sign out
+
+enquiries.email = aeoi.enquiries@hmrc.gov.uk
+
+error.browser.title.prefix = Error:
+error.boolean = Please give an answer
+error.invalid_date = Give a correct date
+error.date.day_blank = Enter a day
+error.date.day_invalid = Give a correct day using numbers 1 to 31
+error.date.month_blank = Enter a month
+error.date.month_invalid = Give a correct month using numbers 1 to 12
+error.date.year_blank = Enter a year
+error.date.year_invalid = Give a correct year
+error.integer = Give an answer in whole numbers
+error.non_numeric = Give a value using only numbers
+error.number = Please enter a valid number
+error.required = Please enter a value
+error.summary.title = There is a problem
+
+index.title = Manage your CRS and FATCA reports
+index.heading = Manage your CRS and FATCA reports
+index.p1 = To send a report, you must {0}.
+index.p1.link = add a financial institution
+index.p2 = You will need to provide your CRS and FATCA user ID {0} in every file you send to HMRC.
+index.h2 = Your contact details
+organisationIndex.h2 = Contact details
+index.p3 = Change your contact details
+organisationIndex.p3 = Change the contact details for {0}
+index.p4 = Email {0} if you are having problems with the service.
+index.p4.link = aeoi.enquiries@hmrc.gov.uk
+index.yourReports.h2 = Your reports
+index.uploadFile.link = Upload an XML file for a financial institution
+index.yourFis.h2 = Your financial institutions
+index.addFi.link = Add a financial institution
+index.manageFi.link = Manage your financial institutions
+
+thereIsAProblem.title = Sorry, there is a problem with the service
+thereIsAProblem.heading = Sorry, there is a problem with the service
+thereIsAProblem.paragraph.1 = Try again later.
+thereIsAProblem.paragraph.2 = You can email {0} if you need to contact someone about your CRS or FATCA reporting.
+
+checkYourAnswers.title = Check the details for the financial institution
+checkYourAnswers.heading = Check the details for {0}
+checkYourAnswers.subheading.FirstContact = First contact
+checkYourAnswers.subheading.SecondContact = Second contact
+checkYourAnswers.submit.subheading = Now add this financial institution
+checkYourAnswers.submit.para = By adding this financial institution, you are confirming that the information is correct and complete to the best of your knowledge.
+checkYourAnswers.submit.button = Confirm and add
+
+default.firstContact.name = your first contact
+default.secondContact.name = your second contact
+default.FI.name = Financial Institution
+
+journeyRecovery.continue.title = Sorry, there is a problem with the service
+journeyRecovery.continue.heading = Sorry, there is a problem with the service
+journeyRecovery.continue.guidance = [Add content to explain how to proceed.]
+journeyRecovery.startAgain.title = Sorry, there is a problem with the service
+journeyRecovery.startAgain.heading = Sorry, there is a problem with the service
+journeyRecovery.startAgain.guidance = [Add content to explain why the user needs to start again.]
+
+signedOut.title = For your security, we signed you out
+signedOut.heading = For your security, we signed you out
+signedOut.guidance = We did not save your answers.
+signedOut.link = Sign in again to use the service
+
+unauthorised.title = You cannot access this page
+unauthorised.heading = You cannot access this page
+unauthorised.link = Back to send a CRS or FATCA report
+unauthorised.emailLink = You can email {0} if you need support with using the service.
+
+firstContactEmail.title = What is the email address for the first contact?
+firstContactEmail.heading = What is the email address for {0}?
+firstContactEmail.p1 = We will use this email address to send confirmation of reports for {0} or if we have any questions about them.
+firstContactEmail.checkYourAnswersLabel = First contact email address
+firstContactEmail.error.required = Enter an email address for the first contact
+firstContactEmail.error.length = The email address must be 132 characters or less
+firstContactEmail.error.format = Enter an email address in the right format, like yourname@example.com
+firstContactEmail.change.hidden = Change first contact email address
+
+firstContactPhoneNumber.checkYourAnswersLabel = First contact telephone number
+firstContactPhoneNumber.title = What is the telephone number for the first contact?
+firstContactPhoneNumber.heading = What is the telephone number for {0}?
+firstContactPhoneNumber.hint = For international numbers, include the country code.
+firstContactPhoneNumber.error.required = Enter a telephone number for the first contact
+firstContactPhoneNumber.error.invalid = The telephone number must only include numbers 0 to 9 and a plus sign, like 01632 960 001, 07700 900 982 or +44 808 157 0192
+firstContactPhoneNumber.error.length = The telephone number must be 24 characters or less
+firstContactPhoneNumber.change.hidden = Change first contact telephone number
+
+firstContactName.title = What is the name of the person or team we should contact?
+firstContactName.heading = What is the name of the person or team we should contact at {0}?
+firstContactName.hint = For example, ‘Ashley Smith’ or ‘Tax team’.
+firstContactName.checkYourAnswersLabel = First contact name
+firstContactName.error.required = Enter a name for the first contact
+firstContactName.error.invalid = The name must only include letters a to z, numbers 0 to 9, ampersands (&), apostrophes, backslashes, carets (^), grave accents (`), hyphens and spaces
+firstContactName.error.length = The name must be 35 characters or less
+firstContactName.change.hidden = Change first contact name
+
+firstContactHavePhone.title.business = Can we contact the first contact by telephone?
+firstContactHavePhone.heading.business = Can we contact {0} by telephone?
+firstContactHavePhone.title.individual = Can we contact you by telephone?
+firstContactHavePhone.heading.individual = Can we contact you by telephone?
+firstContactHavePhone.p1 = We will call if we have any questions about reports for {0}.
+firstContactHavePhone.error.required.individual = Select yes if we can contact you by telephone
+firstContactHavePhone.error.required.business = Select yes if they can be contacted by telephone
+
+nameOfFinancialInstitution.title = What is the name of the financial institution?
+nameOfFinancialInstitution.heading = What is the name of the financial institution?
+nameOfFinancialInstitution.checkYourAnswersLabel = What is the name of the financial institution?
+nameOfFinancialInstitution.error.required = Enter the name of the financial institution
+nameOfFinancialInstitution.error.length = Financial institution name must be 105 characters or less
+nameOfFinancialInstitution.error.invalid = Financial institution name must only include letters a to z, numbers 0 to 9, ampersands (&), apostrophes, backslashes, carets (^), grave accents (`), hyphens and spaces
+nameOfFinancialInstitution.change.hidden = Change financial institution name
+
+whatIsUniqueTaxpayerReference.title = What is the Unique Taxpayer Reference (UTR)?
+whatIsUniqueTaxpayerReference.heading = What is the Unique Taxpayer Reference (UTR) for {0}?
+whatIsUniqueTaxpayerReference.checkYourAnswersLabel = Unique Taxpayer Reference
+whatIsUniqueTaxpayerReference.error.required = Enter the financial institution’s Unique Taxpayer Reference
+whatIsUniqueTaxpayerReference.error.invalid = Unique Taxpayer Reference must only include numbers 0 to 9
+whatIsUniqueTaxpayerReference.error.invalidFormat = Enter the Unique Taxpayer Reference in the right format
+whatIsUniqueTaxpayerReference.hint = The UTR can be 10 or 13 digits long.
+whatIsUniqueTaxpayerReference.change.hidden = Change Unique Taxpayer Reference
+
+whatIsCompanyRegistrationNumber.title = What is the Company Registration Number (CRN) for the financial institution?
+whatIsCompanyRegistrationNumber.heading = What is the Company Registration Number for {0}?
+whatIsCompanyRegistrationNumber.hint = The CRN is 8 characters long, for example 01234567 or AC012345.
+whatIsCompanyRegistrationNumber.p1 = You can
+whatIsCompanyRegistrationNumber.p1.link = search Companies House for a Company Registration Number (opens in new tab)
+whatIsCompanyRegistrationNumber.error.required = Enter the financial institution’s Company Registration Number
+whatIsCompanyRegistrationNumber.error.invalid = Company Registration Number must only include letters A to Z and numbers 0 to 9
+whatIsCompanyRegistrationNumber.error.invalidFormat = 	Enter the Company Registration Number in the right format
+CRN.checkYourAnswersLabel = Company Registration Number
+CRN.change.hidden = Change Company Registration Number
+
+haveGIIN.title = Global Intermediary Identification Number (GIIN)
+haveGIIN.heading = Global Intermediary Identification Number (GIIN)
+haveGIIN.subheading = Would you like to provide a GIIN for {0} now?
+haveGIIN.para.1 = A GIIN is required for FATCA reporting. You can choose to provide it for {0} now or if sending a FATCA report later.
+haveGIIN.para.2 = To receive a GIIN for FATCA, {0} must have registered with the United States of America’s Internal Revenue Service.
+haveGIIN.para.3 = You can also provide a GIIN if you’re reporting for CRS but may report for FATCA later.
+haveGIIN.error.required = Select yes if you would like to provide a GIIN for the financial institution now
+haveGIIN.checkYourAnswersLabel = Would you like to provide a Global Intermediary Identification Number?
+haveGIIN.change.hidden = Change if you would like to provide a Global Intermediary Identification Number
+
+whatIsGIIN.title = What is the financial institution’s GIIN?
+whatIsGIIN.heading = What is the Global Intermediary Identification Number (GIIN) for {0}?
+whatIsGIIN.p1 = This is a number from the United States of America’s Internal Revenue Service (IRS). {0} must have registered with the IRS to receive a number.
+whatIsGIIN.checkYourAnswersLabel = Global Intermediary Identification Number
+whatIsGIIN.error.required = Enter the financial institution’s GIIN
+whatIsGIIN.error.length = GIIN must include 19 characters
+whatIsGIIN.error.format = GIIN must be in the right format
+whatIsGIIN.error.char = GIIN must only include letters a to z, numbers 0 to 9 and full stops
+whatIsGIIN.error.invalid = Enter a real GIIN
+whatIsGIIN.hint = For example, ‘98O96B.00000.LE.350’.
+whatIsGIIN.change.hidden = Change the Global Intermediary Identification Number
+
+secondContact.title = Is there someone else we can contact if your first contact is not available?
+secondContact.heading = Is there someone else we can contact if {0} is not available?
+secondContact.p1 = This can be a team mailbox or another contact.
+secondContact.checkYourAnswersLabel = Do they have a second contact?
+secondContact.change.hidden  = Change if they have a second contact
+secondContact.error.required = Select yes if there is someone else we can contact
+
+secondContactEmail.title = What is the email address for the second contact?
+secondContactEmail.heading = What is the email address for {0}?
+secondContactEmail.p1 =We will use this email address to send confirmation of reports for {0} or if we have any questions about them.
+secondContactEmail.checkYourAnswersLabel = Second contact email address
+secondContactEmail.change.hidden = Change second contact email address
+secondContactEmail.error.required = Enter an email address for the second contact
+secondContactEmail.error.length = The email address must be 132 characters or less
+secondContactEmail.error.invalid = Enter an email address in the right format, like yourname@example.com
+
+secondContactName.title = What is the name of the person or team we should contact?
+secondContactName.heading = What is the name of the person or team we should contact at {0}?
+secondContactName.hint = For example, '‘Ashley Smith’' or '‘Tax team’'.
+secondContactName.checkYourAnswersLabel = Second contact name
+secondContactName.change.hidden = Change second contact name
+secondContactName.error.required = Enter a name for the second contact
+secondContactName.error.invalid = The name must only include letters a to z, numbers 0 to 9, ampersands (&), apostrophes, backslashes, carets (^), grave accents (`), hyphens and spaces
+secondContactName.error.length = The name must be 35 characters or less
+
+secondContactCanWePhone.title = Can we contact the second contact by telephone?
+secondContactCanWePhone.heading = Can we contact {0} by telephone?
+secondContactCanWePhone.p1 = We will call if we have any questions about reports for {0}.
+secondContactCanWePhone.checkYourAnswersLabel = Can we contact {0} by telephone?
+secondContactCanWePhone.error.required = Select yes if they can be contacted by telephone
+secondContactCanWePhone.change.hidden = Change can we contact {0} by telephone?
+
+secondContactPhoneNumber.title = What is the telephone number for the second contact?
+secondContactPhoneNumber.heading = What is the telephone number for {0}?
+secondContactPhoneNumber.checkYourAnswersLabel = Second contact telephone number
+secondContactPhoneNumber.error.required = Enter a telephone number for the second contact
+secondContactPhoneNumber.error.invalid = The telephone number must only include numbers 0 to 9 and a plus sign, like 01632 960 001, 07700 900 982 or +44 808 157 0192
+secondContactPhoneNumber.error.length = The telephone number must be 24 characters or less
+secondContactPhoneNumber.change.hidden = Change second contact telephone number
+secondContactPhoneNumber.hint = For international numbers, include the country code.
+
+pageNotFound.title = Page not found
+pageNotFound.heading = Page not found
+pageNotFound.para.1 = If you typed the web address, check it is correct.
+pageNotFound.para.2 = If you pasted the web address, check you copied the entire address.
+pageNotFound.para.3 = You can email {0} if you have any questions about this service.
+pageNotFound.para.email = aeoi.enquiries@hmrc.gov.uk
+
+whereIsFIBased.title = Is the financial institution based in the UK, Jersey, Guernsey or the Isle of Man?
+whereIsFIBased.heading = Is {0} based in the UK, Jersey, Guernsey or the Isle of Man?
+whereIsFIBased.yes = Yes
+whereIsFIBased.no = No
+whereIsFIBased.checkYourAnswersLabel = Is the financial institution based in the UK, Jersey, Guernsey or the Isle of Man?
+whereIsFIBased.error.required = Select yes if the financial institution is based in the UK, Jersey, Guernsey or the Isle of Man
+
+pageUnavailable.title = This page is no longer available
+pageUnavailable.heading = This page is no longer available
+pageUnavailable.link.text = Back to manage your CRS and FATCA reports
+
+ukAddress.title = What is the financial institution’s address?
+ukAddress.heading = What is the registered address for {0}?
+ukAddress.addressLine1 = Address line 1
+ukAddress.addressLine2 = Address line 2 (optional)
+ukAddress.addressLine3 = City
+ukAddress.addressLine4.county = County (optional)
+ukAddress.postCode.mandatory = Postcode
+ukAddress.countryCode = Country
+ukAddress.error.addressLine1.required = Enter address line 1
+ukAddress.error.addressLine1.invalid = Address line 1 must only include letters a to z, numbers 0 to 9, apostrophes, commas, ampersands (&), hyphens, full stops and spaces
+ukAddress.error.addressLine1.length = Address line 1 must be 35 characters or less
+ukAddress.error.addressLine2.invalid = Address line 2 must only include letters a to z, numbers 0 to 9, apostrophes, commas, ampersands (&), hyphens, full stops and spaces
+ukAddress.error.addressLine2.length = Address line 2 must be 35 characters or less
+ukAddress.error.addressLine3.required = Enter city
+ukAddress.error.addressLine3.invalid = City must only include letters a to z, numbers 0 to 9, apostrophes, commas, ampersands (&), hyphens, full stops and spaces
+ukAddress.error.addressLine3.length = City must be 35 characters or less
+ukAddress.error.addressLine4.invalid = County must only include letters a to z, numbers 0 to 9, apostrophes, commas, ampersands (&), hyphens, full stops and spaces
+ukAddress.error.addressLine4.length = County must be 35 characters or less
+ukAddress.error.postcode.required = Enter a postcode, like AA1 1AA
+ukAddress.error.postcode.length = Postcode must be 10 characters or less
+ukAddress.error.postcode.chars = Postcode must only include letters a to z and numbers 0 to 9
+ukAddress.error.postcode.invalid = Enter a real postcode
+ukAddress.error.postcode.nonUk = Postcode must be a UK postcode
+
+isTheAddressCorrect.title = Is this the registered address for the financial institution?
+isTheAddressCorrect.heading = Is this the registered address for {0}?
+isTheAddressCorrect.checkYourAnswersLabel = isTheAddressCorrect
+isTheAddressCorrect.error.required = Select yes if the registered address for the financial institution is correct
+
+isThisYourBusinessName.title = Is this the correct name for the business?
+isThisYourBusinessName.heading = Is this the correct name for the business?
+isThisYourBusinessName.checkYourAnswersLabel = What is the name of the financial institution?
+isThisYourBusinessName.error.required = Select yes if this is the correct name for the business
+isThisYourBusinessName.change.hidden = Change financial institution name
+
+
+reportForRegisteredBusiness.title = Would you like to add your business as a financial institution?
+reportForRegisteredBusiness.heading = Would you like to add your business as a financial institution?
+reportForRegisteredBusiness.p1 = If you need to report for the business you registered as, then you can add them as a financial institution now. If you would prefer to add another financial institution first, then you can still add the registered business later.
+reportForRegisteredBusiness.checkYourAnswersLabel = Do you need to report for the business you registered as?
+reportForRegisteredBusiness.error.required = Select yes if you would like to add your business as a financial institution
+reportForRegisteredBusiness.error.required.change = Select yes if this financial institution is the business you registered as
+reportForRegisteredBusiness.check.hidden = Change if you need to report for the business you registered as
+reportForRegisteredBusiness.change.hidden = Change if this financial institution is the business you registered as
+reportForRegisteredBusiness.changeInProgress.title = Is this financial institution the business you registered as?
+reportForRegisteredBusiness.changeInProgress.heading = Is this financial institution the business you registered as?
+
+
+nonUkAddress.title = What is the financial institution’s registered address?
+nonUkAddress.heading = What is the registered address for {0}?
+nonUkAddress.addressLine1 = Address line 1
+nonUkAddress.addressLine2 = Address line 2 (optional)
+nonUkAddress.addressLine3 = City
+nonUkAddress.addressLine4.region = Region (optional)
+nonUkAddress.postCode.optional = Postcode (optional)
+nonUkAddress.countryCode = Country
+
+nonUkAddress.error.addressLine1.required = Enter address line 1
+nonUkAddress.error.addressLine1.invalid = Address line 1 must only include letters a to z, numbers 0 to 9, apostrophes, commas, ampersands (&), hyphens, full stops and spaces
+nonUkAddress.error.addressLine1.length = Address line 1 must be 35 characters or less
+nonUkAddress.error.addressLine2.invalid = Address line 2 must only include letters a to z, numbers 0 to 9, apostrophes, commas, ampersands (&), hyphens, full stops and spaces
+nonUkAddress.error.addressLine2.length = Address line 2 must be 35 characters or less
+nonUkAddress.error.addressLine3.required = Enter city
+nonUkAddress.error.addressLine3.invalid = City must only include letters a to z, numbers 0 to 9, apostrophes, commas, ampersands (&), hyphens, full stops and spaces
+nonUkAddress.error.addressLine3.length = City must be 35 characters or less
+nonUkAddress.error.addressLine4.invalid = Region must only include letters a to z, numbers 0 to 9, apostrophes, commas, ampersands (&), hyphens, full stops and spaces
+nonUkAddress.error.addressLine4.length = Region must be 35 characters or less
+nonUkAddress.error.postcode.length = Postcode must be 10 characters or less
+nonUkAddress.error.country.required = Select country
+
+selectAddress.title = What is the financial institution’s address?
+selectAddress.heading = What is the address for {0}?
+selectAddress.error.required = Select the address for the financial institution or enter it manually
+selectAddress.p1.part1 = Select from the list or {0}
+selectAddress.p1.part2 = enter your address manually
+selectAddress.checkYourAnswersLabel = Main business address
+selectAddress.change.hidden = Change main business address
+
+isThisAddress.title = Is this the financial institution’s address?
+isThisAddress.heading = Is this the address for {0}?
+isThisAddress.checkYourAnswersLabel = Is this the address
+isThisAddress.error.required = Select yes if this is the financial institution’s address
+isThisAddress.change.hidden = Is this the address
+
+postcode.title = What is the financial institution’s postcode?
+postcode.heading = What is the postcode for {0}?
+postcode.checkYourAnswersLabel = What is the financial institution’s postcode?
+postcode.p1 = Enter the postcode to find the address automatically.
+postcode.manualLink = Or enter the address manually
+postcode.error.required = Enter a postcode, like AA1 1AA
+postcode.error.length = Postcode must be 10 characters or less
+postcode.error.chars = Postcode must only include letters a to z and numbers 0 to 9
+postcode.error.invalid = Enter a real postcode or enter the address manually
+postcode.error.notFound = No addresses found — enter a different postcode or enter the address manually
+postcode.error.postcode.nonUk = Postcode must be a UK postcode
+postcode.continue = Find address
+
+registeredBusinessCheckYourAnswers.title = Check the details for the registered business
+registeredBusinessCheckYourAnswers.heading = Check the details for {0}
+registeredBusinessCheckYourAnswers.subheading = Now send these details for the registered business
+registeredBusinessCheckYourAnswers.para = By sending these details, you are confirming that the information is correct and complete to the best of your knowledge.
+registeredBusinessCheckYourAnswers.submit.button = Confirm and send
+
+financialInstitutionAddedConfirmation.title = Financial institution added
+financialInstitutionAddedConfirmation.heading = Financial institution added
+financialInstitutionAddedConfirmation.p1 = You will need to provide the FI ID in every file you send to HMRC for {0}.
+financialInstitutionAddedConfirmation.p2 = Back to manage your financial institutions
+financialInstitutionAddedConfirmation.p3 = Back to manage your CRS and FATCA reports
+
+yourFinancialInstitutions.title = Your Financial Institutions (Please update as part of DAC6-3048)
+yourFinancialInstitutions.heading = Your Financial Institutions (Please update as part of DAC6-3048)
+
+someInformationMissing.title = Some information is missing
+someInformationMissing.heading = Some information is missing
+someInformationMissing.p1 = You must provide this information to update your financial institutions.
+
+yourFinancialInstitutions.title = Manage your financial institutions
+yourFinancialInstitutions.heading.noFinancialInstitutions = You have not added any financial institutions
+yourFinancialInstitutions.heading.singleFinancialInstitution = You have added 1 financial institution
+yourFinancialInstitutions.heading.multipleFinancialInstitutions = You have added {0} financial institutions
+yourFinancialInstitutions.addFinancialInstitution = Do you need to add a financial institution?
+yourFinancialInstitutions.addAnotherFinancialInstitution = Do you need to add another financial institution?
+yourFinancialInstitutions.link.manageReports = Manage reports
+yourFinancialInstitutions.error.required = Select yes if you need to add a financial institution
+yourFinancialInstitutions.change.hidden = Change the details for {0}
+yourFinancialInstitutions.remove.hidden = Remove {0} from the list
+yourFinancialInstitutions.manageReports.hidden = Manage reports for {0}
+yourFinancialInstitutions.notification = {0} removed.
+
+removeAreYouSure.pageTitle.yes      =    If you remove the financial institution, it will not be possible for anyone to access or update any previously sent reports
+removeAreYouSure.pageTitle.no       =    If you remove the financial institution, it will not be possible to access or update any previously sent reports
+removeAreYouSure.heading.yes        =    If you remove {0}, it will not be possible for anyone to access or update any previously sent reports
+removeAreYouSure.heading.no         =    If you remove {0}, it will not be possible to access or update any previously sent reports
+removeAreYouSure.para1              =    You should make any changes to the reports before you remove {0}.
+removeAreYouSure.para2              =    If someone adds {0} as a financial institution again in the future, then they will have a different FI ID.
+removeAreYouSure.warning            =    Removing a financial institution that has inaccurate or incomplete reports could result in a penalty for that financial institution.
+removeAreYouSure.subHeading         =    Are you sure you want to permanently remove {0}?
+removeAreYouSure.error.required     =    Select yes if you are sure you want to remove the financial institution
+
+changeYourAnswers.title = Change the details for the financial institution
+changeYourAnswers.heading = Change the details for {0}
+changeYourAnswers.subheading.FirstContact = First contact
+changeYourAnswers.subheading.SecondContact = Second contact
+changeYourAnswers.changed.subheading = Now change these details for this financial institution
+changeYourAnswers.p1 = Back to manage your financial institutions
+changeYourAnswers.changed.p2 = By changing these details, you are confirming that the information is correct and complete to the best of your knowledge.
+changeYourAnswers.submit.button = Confirm and send
+
+changeYourRegisteredAnswers.title = Change the details for the registered business
+changedYourRegisteredAnswers.title = Check the details for the registered business
+changeYourRegisteredAnswers.heading = Change the details for the registered business
+changedYourRegisteredAnswers.heading = Check the details for the registered business
+changeYourRegisteredAnswers.changed.subheading = Now send these details for the registered business
+changedYourRegisteredAnswers.p1 = {0} is the business you registered as.
+changeYourRegisteredAnswers.changed.p2 = By sending these details, you are confirming that the information is correct and complete to the best of your knowledge.
+changeYourRegisteredAnswers.submit.button = Confirm and send
+
+financialInstitutionId.changeYourAnswersLabel = FI ID
+nameOfFinancialInstitution.changeYourAnswersLabel = What is the name of the financial institution?
+whatIsUniqueTaxpayerReference.changeYourAnswersLabel = Unique Taxpayer Reference
+haveGIIN.changeYourAnswersLabel = Would you like to provide a Global Intermediary Identification Number?
+whatIsGIIN.changeYourAnswersLabel = Global Intermediary Identification Number
+selectAddress.changeYourAnswersLabel = Main business address
+firstContactName.changeYourAnswersLabel = First contact name
+firstContactEmail.changeYourAnswersLabel = First contact email address
+firstContactPhoneNumber.changeYourAnswersLabel = First contact telephone number
+secondContact.changeYourAnswersLabel = Do they have a second contact?
+secondContactName.changeYourAnswersLabel = Second contact name
+secondContactEmail.changeYourAnswersLabel = Second contact email address
+secondContactPhoneNumber.changeYourAnswersLabel = Second contact telephone number
+isFIRegistered.changeYourAnswersLabel = Is this financial institution the business you registered as?
+isThisYourBusinessName.changeYourAnswersLabel = What is the name of the financial institution?
+reportForRegisteredBusiness.changeYourAnswersLabel = Is this financial institution the business you registered as?
+
+detailsUpdated.title = Financial institution updated
+detailsUpdated.heading = Details updated for {0}
+detailsUpdated.p1 = Back to manage your financial institutions
+detailsUpdated.p2 = Back to manage your CRS and FATCA reports
+
+trustURN.title = What is the trust Unique Reference Number (URN) for the financial institution?
+trustURN.heading = What is the trust Unique Reference Number (URN) for {0}?
+trustURN.hint = The trust URN is 15 characters long, for example ABTRUST12345678.
+trustURN.error.required = Enter the trust Unique Reference Number
+trustURN.error.invalidChar = Trust Unique Reference Number must only include letters A to Z and numbers 0 to 9
+trustURN.error.invalidFormat = Enter the trust Unique Reference Number in the right format
+trustURN.error.real = Enter a real trust Unique Reference Number
+
+notInUK.title = This service is only for financial institutions based in the UK
+notInUK.heading = This service is only for financial institutions based in the UK
+notInUK.p1 = You have confirmed that the registered business address for {0} is not in the UK.
+notInUK.p2 = If you confirmed this by mistake, then you can {0}
+notInUK.p2.link = review and change the address to the right one
+notInUK.p3 = Email {0} if you need help with this service.
+
+trustURN.checkYourAnswersLabel = Trust Unique Reference Number
+trustURN.change.hidden = Change trust Unique Reference Number
+
+whichIdentificationNumbers.title = Which identification numbers can you provide for the financial institution?
+whichIdentificationNumbers.heading = Which identification numbers can you provide for {0}?
+whichIdentificationNumbers.hint = Select at least one option.
+whichIdentificationNumbers.UTR = Unique Taxpayer Reference (UTR)
+whichIdentificationNumbers.CRN = Company Registration Number (CRN)
+whichIdentificationNumbers.TURN = Trust Unique Reference Number (URN)
+
+whichIdentificationNumbersSummary.UTR = Unique Taxpayer Reference
+whichIdentificationNumbersSummary.CRN = Company Registration Number
+whichIdentificationNumbersSummary.TURN = Trust Unique Reference Number
+
+whichIdentificationNumbers.or = or
+whichIdentificationNumbers.checkYourAnswersLabel = Which identification numbers can you provide for them?
+whichIdentificationNumbers.error.required = Select which identification numbers you can provide for the financial institution
+whichIdentificationNumbers.error.noMixedTrn = Select ‘Trust Unique Reference Number (URN)’ only or select one or both of the other options
+whichIdentificationNumbers.change.hidden = Change which identification numbers you can provide for them
+
+userAccess.title.individual                 = Will you need to access or update any previously sent reports for the financial institution?
+userAccess.heading.individual               = Will you need to access or update any previously sent reports for {0}?
+userAccess.title.organisation               = Will anyone at your business need to access or update any previously sent reports for the financial institution?
+userAccess.heading.organisation             = Will anyone at {0} need to access or update any previously sent reports for {1}?
+userAccess.title.registeredUser             = Will anyone at your business need to access or update any previously sent reports for the business?
+userAccess.heading.registeredUser           = Will anyone at {0} need to access or update any previously sent reports for the business?
+userAccess.error.required.individual        = Select yes if you will need to access or update any previously sent reports for the financial institution
+userAccess.error.required.organisation      = Select yes if anyone at your business will need to access or update any previously sent reports for the financial institution
+userAccess.error.required.registeredUser    = Select yes if anyone at your business will need to access or update any previously sent reports for the business
+
+otherAccess.title = Could the financial institution or anyone who may act on their behalf need to access or update any previously sent reports for them?
+otherAccess.title.fiisuser = Could anyone who may act on behalf of your business in the future need to access or update any previously sent reports?
+otherAccess.heading = Could {0} or anyone who may act on their behalf need to access or update any previously sent reports for them?
+otherAccess.heading.fiisuser = Could anyone who may act on behalf of {0} in the future need to access or update any previously sent reports?
+otherAccess.error.required.regular = Select yes if the financial institution or anyone who may act on their behalf may need to access or update any previously sent reports for them
+otherAccess.error.required.fiisuser = Select yes if anyone who may act on behalf of your business in the future may need to access or update any previously sent reports
+
+fIRemoved.title = Financial institution removed
+fIRemoved.heading = {0} removed
+fIRemoved.p1 = You have permanently removed {0} with the FI ID {1}.
+fIRemoved.p2 = Back to manage your financial institutions
+fIRemoved.p3 = Back to manage your CRS and FATCA reports
+
+fIAlreadyRemoved.title = You have already removed this financial institution
+fIAlreadyRemoved.heading = You have already removed this financial institution
+fIAlreadyRemoved.p1 = Manage your financial institutions

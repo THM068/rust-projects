@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block main %}
+<h1 class="text-2xl font-bold mb-2" >Bookmarker</h1>
+<p class="mb-4">Enter a new bookmark:</p>
+
+<div class="flex flex-wrap">
+  <div class="w-full md:w-1/2">
+    <form hx-target="#content" hx-post="/bookmark" class="w-full" hx-on::after-request="if(event.detail.successful) this.reset()">
+      <div class="mb-4">
+        <label for="title" class="block text-sm font-medium text-gray-700">Title</label>
+        <input type="text" class="mt-1 block w-full border border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" id="title" name="title" placeholder="Enter bookmark title" required>
+      </div>
+      <div class="mb-4">
+        <label for="url" class="block text-sm font-medium text-gray-700">URL</label>
+        <input type="url" class="mt-1 block w-full border border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" id="url" name="url" placeholder="https://example.com" required>
+      </div>
+      <div class="mb-4">
+        <button type="submit" class="py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded">Save Bookmark</button>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="w-full md:w-1/2">
+  <div hx-get="/bookmark"  hx-trigger="load" hx-target="#content"></div>
+  <div id="content"></div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,24 @@
+[package]
+name = "web"
+authors = ["admin <thando.mafela@gmail.com>"]
+description = "Website to add bookmark links"
+version = "0.2.0"
+rust-version = "1.78"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+anyhow = "1"
+spin-sdk = "5.0.0"
+askama = { version = "0.14.0", features = ["serde_json"] }
+serde = { version = "1.0.219", features = ["derive"] }
+serde_urlencoded = "0.7.1"
+validator = { version = "0.20", features = ["derive"] }
+serde_json = "1.0.145"
+bcrypt = "0.17.1"
+jwt-simple = "0.12.12"
+
+
+[workspace]

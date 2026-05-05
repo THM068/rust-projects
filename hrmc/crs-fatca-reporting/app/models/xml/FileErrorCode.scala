@@ -1,0 +1,60 @@
+/*
+ * Copyright 2023 HM Revenue & Customs
+ *
+ */
+
+package models.xml
+
+import play.api.libs.json.{__, JsString, Reads, Writes}
+
+import scala.xml.NodeSeq
+
+sealed abstract class FileErrorCode(val code: String)
+
+object FileErrorCode {
+
+  case object FailedSchemaValidation extends FileErrorCode("50007")
+  case object InvalidMessageRefIDFormat extends FileErrorCode("50008")
+  case object MessageRefIDHasAlreadyBeenUsed extends FileErrorCode("50009")
+  case object FileContainsTestDataForProductionEnvironment extends FileErrorCode("50010")
+  case object NotMeantToBeReceivedByTheIndicatedJurisdiction extends FileErrorCode("50012")
+  case object CustomError extends FileErrorCode("99999")
+  case class UnknownFileErrorCode(override val code: String) extends FileErrorCode(code)
+
+  val values: Seq[FileErrorCode] = Seq(
+    FailedSchemaValidation,
+    InvalidMessageRefIDFormat,
+    MessageRefIDHasAlreadyBeenUsed,
+    FileContainsTestDataForProductionEnvironment,
+    NotMeantToBeReceivedByTheIndicatedJurisdiction,
+    CustomError
+  )
+
+  val fileErrorCodesForProblemStatus: Seq[FileErrorCode] = Seq(
+    FailedSchemaValidation,
+    InvalidMessageRefIDFormat,
+    NotMeantToBeReceivedByTheIndicatedJurisdiction
+  )
+
+  implicit val writes: Writes[FileErrorCode] = Writes[FileErrorCode] { x =>
+    JsString(x.code)
+  }
+
+  implicit val reads: Reads[FileErrorCode] = __.read[String].map {
+    case "50007"   => FailedSchemaValidation
+    case "50008"   => InvalidMessageRefIDFormat
+    case "50009"   => MessageRefIDHasAlreadyBeenUsed
+    case "50010"   => FileContainsTestDataForProductionEnvironment
+    case "50012"   => NotMeantToBeReceivedByTheIndicatedJurisdiction
+    case "99999"   => CustomError
+    case otherCode => UnknownFileErrorCode(otherCode)
+  }
+
+  given XmlReads[FileErrorCode] with
+    def read(xml: NodeSeq): FileErrorCode =
+      val text = xml.text.trim
+      FileErrorCode.values
+        .find(_.code == text)
+        .getOrElse(FileErrorCode.UnknownFileErrorCode(text))
+
+}

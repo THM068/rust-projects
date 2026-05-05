@@ -1,0 +1,20 @@
+spin_manifest_version = 2
+
+[application]
+authors = ["Fermyon Engineering <engineering@fermyon.com>"]
+description = ""
+name = "http-crud-js-sqlite"
+version = "0.1.0"
+
+[[trigger.http]]
+route = "/..."
+component = "crud-api"
+
+[component.crud-api]
+source = "dist/crud-api.wasm"
+exclude_files = ["**/node_modules"]
+sqlite_databases = ["default"]
+
+[component.crud-api.build]
+command = ["npm install", "npm run build"]
+watch = ["src/**/*.js"]

@@ -1,0 +1,87 @@
+$govuk-assets-path: "/disclose-cross-border-arrangements/upload/assets/lib/govuk-frontend/govuk/assets/";
+$hmrc-assets-path: "/disclose-cross-border-arrangements/upload/assets/lib/hmrc-frontend/hmrc/assets";
+@import "partials/spinner";
+
+.text-overflow{
+    word-wrap: break-word;
+}
+
+.remove-end-whitespace{
+  padding-bottom: govuk-spacing(0);
+  margin-bottom: govuk-spacing(0);
+}
+
+body:not(.js-enabled) .js-enabled {
+        display: none;
+        visibility: hidden;
+        width: 0;
+        height: 0;
+}
+
+.code--block{
+    min-width: 100% !important;
+    border: none;
+    margin: 0;
+    line-height: 1.5em;
+    padding: 10px;
+    word-wrap: break-word;
+    font-family: Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;
+    color: #0b0c0c;
+    font-size: 14px;
+    background-color: #F7F7F7;
+    display: inline-block;
+}
+
+.code--slim{
+    border: 1px solid #DFE0E7;
+    border-radius: 4px;
+    padding: 2px 4px;
+    display: inline-block;
+    background-color: #F7F7F7;
+    line-height: 1.1em;
+    font-family: Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;
+    color: #0b0c0c;
+    font-size: 14px;
+}
+.cbc-table-filename {
+  word-break: break-all;
+}
+
+.cbc-width-file {
+   width: 40%;
+ }
+
+ .cbc-width-uploaded {
+   width: 20%;
+ }
+
+ .cbc-width-result {
+   width: 18%;
+ }
+
+ .cbc-width-next {
+   width: 22%;
+ }
+
+.cbc-file-rejected-table p {
+  overflow-wrap: anywhere;
+  word-wrap: anywhere;
+}
+
+.cbc-file-rejected-table .govuk-body,
+.cbc-file-rejected-table .govuk-list {
+  margin-bottom: 0.4em;
+}
+
+.cbc-file-rejected-table .doc-ref-ids .govuk-body {
+  margin-bottom: 1em;
+}
+
+.cbc-file-rejected-table td > .govuk-body:last-child,
+.cbc-file-rejected-table td > .govuk-list:last-child {
+  margin-bottom: 0;
+}
+
+.govuk-summary-list__value {
+      width: 50%;
+  }

@@ -1,0 +1,17 @@
+[package]
+name = "ai-bookmark-app"
+authors = ["admin <thando.mafela@gmail.com>"]
+description = "Ai bookmark app"
+version = "0.1.0"
+rust-version = "1.78"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+anyhow = "1"
+spin-sdk = "3.1.0"
+askama = "0.14.0"
+
+[workspace]

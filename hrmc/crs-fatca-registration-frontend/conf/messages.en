@@ -1,0 +1,686 @@
+service.name = Send a CRS or FATCA report
+
+site.back = Back
+site.remove = Remove
+site.change = Change
+site.no = No
+site.yes = Yes
+site.continue = Continue
+site.start = Start now
+site.startAgain = Start again
+site.signIn = Sign in
+site.govuk = GOV.UK
+site.backToReportPage = Back to manage your CRS and FATCA reports
+
+date.day = Day
+date.month = Month
+date.year = Year
+
+timeout.title = You’re about to be signed out
+timeout.message = For your security, we will sign you out in
+timeout.keepAlive = Stay signed in
+timeout.signOut = Sign out
+
+error.browser.title.prefix = Error:
+error.boolean = Please give an answer
+error.invalid_date = Give a correct date
+error.date.day_blank = Enter a day
+error.date.day_invalid = Give a correct day using numbers 1 to 31
+error.date.month_blank = Enter a month
+error.date.month_invalid = Give a correct month using numbers 1 to 12
+error.date.year_blank = Enter a year
+error.date.year_invalid = Give a correct year
+error.integer = Give an answer in whole numbers
+error.non_numeric = Give a value using only numbers
+error.number = Please enter a valid number
+error.required = Please enter a value
+error.summary.title = There is a problem
+
+index.title = crs-fatca-registration-frontend
+index.heading = crs-fatca-registration-frontend
+index.guidance = Welcome to your new frontend. Please see the README file for a guide to getting started.
+
+checkYourAnswers.title = Check Your Answers
+checkYourAnswers.heading = Check Your Answers
+checkYourAnswers.notProvided = Not provided
+checkYourAnswers.changeDetails = Change details
+checkYourAnswers.changeDetails.hidden = Change your National Insurance number, name and date of birth
+
+default.firstContact.name = your first contact
+default.secondContact.name = your second contact
+
+journeyRecovery.continue.title = Sorry, there is a problem with the service
+journeyRecovery.continue.heading = Sorry, there is a problem with the service
+journeyRecovery.continue.guidance = [Add content to explain how to proceed.]
+journeyRecovery.startAgain.title = Sorry, there is a problem with the service
+journeyRecovery.startAgain.heading = Sorry, there is a problem with the service
+journeyRecovery.startAgain.guidance = [Add content to explain why the user needs to start again.]
+
+signedOut.title = For your security, we signed you out
+signedOut.heading = For your security, we signed you out
+signedOut.guidance = We did not save your answers.
+
+unauthorised.title = You cannot access this page
+unauthorised.heading = You cannot access this page
+unauthorised.link = Back to send a CRS or FATCA report
+unauthorised.emailLink = You can email {0} if you need support with using the service.
+
+yourContactDetails.title = Setting up contact details for CRS and FATCA
+yourContactDetails.heading = Setting up contact details for CRS and FATCA
+yourContactDetails.p1 = Provide the name and contact details for one or two people or teams within your organisation who could answer questions about your reports.
+yourContactDetails.p2 = You can change your CRS and FATCA contact names and details later, if you want to.
+
+contactName.title = What is the name of the person or team we should contact?
+contactName.heading = What is the name of the person or team we should contact?
+contactName.hint = For example, '‘Ashley Smith’' or '‘Tax team’'.
+contactName.checkYourAnswersLabel = First contact name
+contactName.error.required = Enter a name for the first contact
+contactName.error.length = The name must be 35 characters or less
+contactName.error.invalid = The name must only include letters a to z, numbers 0 to 9, ampersands (&), apostrophes, backslashes, carets (^), grave accents (`), hyphens and spaces
+contactName.change.hidden = Change first contact name
+
+contactEmail.title = What is the email address for the first contact?
+contactEmail.heading = What is the email address for {0}?
+contactEmail.checkYourAnswersLabel = First contact email address
+contactEmail.p1 = We will use this email address to send confirmation of your reports or if we have any questions about them.
+contactEmail.error.required = Enter an email address for the first contact
+contactEmail.error.length = The email address must be 132 characters or less
+contactEmail.error.invalid = Enter an email address in the right format, like yourname@example.com
+contactEmail.change.hidden = Change first contact email address
+
+contactHavePhone.title = Can we contact your first contact by telephone?
+contactHavePhone.heading = Can we contact {0} by telephone?
+contactHavePhone.p1 = We will call if we have any questions about your reports.
+contactHavePhone.checkYourAnswersLabel = Can we contact {0} by telephone?
+contactHavePhone.error.required = Select yes if they can be contacted by telephone
+contactHavePhone.change.hidden = Change can we contact {0} by telephone?
+
+contactPhone.checkYourAnswersLabel = First contact telephone number
+contactPhone.title = What is the telephone number for the first contact?
+contactPhone.heading = What is the telephone number for {0}?
+contactPhone.hint = For international numbers, include the country code.
+contactPhone.error.required = Enter a telephone number for the first contact
+contactPhone.error.invalid = The telephone number must only include numbers 0 to 9 and a plus sign, like 01632 960 001, 07700 900 982 or +44 808 157 0192
+contactPhone.error.length = The telephone number must be 24 characters or less
+contactPhone.change.hidden = Change first contact telephone number
+
+secondContactEmail.title = What is the email address for the second contact?
+secondContactEmail.heading = What is the email address for {0}?
+secondContactEmail.p1 = We will use this email address to send confirmation of your reports or if we have any questions about them.
+secondContactEmail.checkYourAnswersLabel = Second contact email address
+secondContactEmail.error.required = Enter an email address for the second contact
+secondContactEmail.error.length = The email address must be 132 characters or less
+secondContactEmail.error.invalid = Enter an email address in the right format, like yourname@example.com
+secondContactEmail.change.hidden = Change second contact email address
+
+haveSecondContact.title = Is there someone else we can contact if your first contact is not available?
+haveSecondContact.heading = Is there someone else we can contact if {0} is not available?
+haveSecondContact.p1 = This can be a team mailbox or another contact.
+haveSecondContact.checkYourAnswersLabel = Do you have a second contact?
+haveSecondContact.change.hidden = Change if you have a second contact
+haveSecondContact.error.required = Select yes if there is someone else we can contact
+
+secondContactName.title = What is the name of the person or team we should contact?
+secondContactName.heading = What is the name of the person or team we should contact?
+secondContactName.hint = For example, ‘Ashley Smith’ or ‘Tax team’.
+secondContactName.checkYourAnswersLabel = Second contact name
+secondContactName.error.required = Enter a name for the second contact
+secondContactName.error.invalid = The name must only include letters a to z, numbers 0 to 9, ampersands (&), apostrophes, backslashes, carets (^), grave accents (`), hyphens and spaces
+secondContactName.error.length = The name must be 35 characters or less
+secondContactName.change.hidden = Change second contact name
+
+secondContactHavePhone.title = Can we contact your second contact by telephone?
+secondContactHavePhone.heading = Can we contact {0} by telephone?
+secondContactHavePhone.p1 = We will call if we have any questions about your reports.
+secondContactHavePhone.error.required = Select yes if they can be contacted by telephone
+
+secondContactPhone.title = What is the telephone number for the second contact?
+secondContactPhone.heading = What is the telephone number for {0}?
+secondContactPhone.hint = For international numbers, include the country code.
+secondContactPhone.checkYourAnswersLabel = Second contact telephone number
+secondContactPhone.error.required = Enter a telephone number for the second contact
+secondContactPhone.error.invalid = The telephone number must only include numbers 0 to 9 and a plus sign, like 01632 960 001, 07700 900 982 or +44 808 157 0192
+secondContactPhone.error.length = The telephone number must be 24 characters or less
+secondContactPhone.change.hidden = Change second contact telephone number
+
+indContactEmail.title = What is your email address?
+indContactEmail.heading = What is your email address?
+indContactEmail.p1 = We will use this email address to send confirmation of your reports or if we have any questions about them.
+indContactEmail.checkYourAnswersLabel = Email address
+indContactEmail.error.required = Enter your email address
+indContactEmail.error.invalid = Enter an email address in the right format, like yourname@example.com
+indContactEmail.error.length = The email address must be 132 characters or less
+indContactEmail.change.hidden = Change email address
+
+indContactHavePhone.title = Can we contact you by telephone?
+indContactHavePhone.heading = Can we contact you by telephone?
+indContactHavePhone.p1 = We will call if we have any questions about your reports.
+indContactHavePhone.checkYourAnswersLabel = Can we contact you by telephone?
+indContactHavePhone.error.required = Select yes if we can contact you by telephone
+indContactHavePhone.change.hidden = Change can we contact you by telephone?
+
+indContactPhone.title = What is your telephone number?
+indContactPhone.heading = What is your telephone number?
+indContactPhone.hint = For international numbers, include the country code.
+indContactPhone.checkYourAnswersLabel = Telephone number
+indContactPhone.error.required = Enter your telephone number
+indContactPhone.error.invalid = The telephone number must only include numbers 0 to 9 and a plus sign, like 01632 960 001, 07700 900 982 or +44 808 157 0192
+indContactPhone.error.length = The telephone number must be 24 characters or less
+indContactPhone.change.hidden = Change telephone number
+
+indDateOfBirth.title = What is your date of birth?
+indDateOfBirth.heading = What is your date of birth?
+indDateOfBirth.hint = For example, 31 3 1980.
+indDateOfBirth.checkYourAnswersLabel = Your date of birth
+indDateOfBirth.error.required.all = Enter your date of birth
+indDateOfBirth.error.required.day = Enter the day you were born
+indDateOfBirth.error.required.month = Enter the month you were born
+indDateOfBirth.error.required.year = Enter the year you were born
+indDateOfBirth.error.required.dayAndMonth = Enter the day and month you were born
+indDateOfBirth.error.required.dayAndYear = Enter the day and year you were born
+indDateOfBirth.error.required.monthAndYear = Enter the month and year you were born
+indDateOfBirth.error.invalid = Date of birth must only include numbers 0 to 9
+indDateOfBirth.error.notRealDate = Enter a real date of birth
+indDateOfBirth.error.futureDate = Date of birth must be before {0}
+indDateOfBirth.error.pastDate = Date of birth must be after 1900
+indDateOfBirth.change.hidden = Change your date of birth
+
+indContactName.title = What is your name?
+indContactName.heading = What is your name?
+indContactName.firstName = First name
+indContactName.lastName = Last name
+indContactName.checkYourAnswersLabel = Your name
+indContactName.error.firstName.required = Enter your first name
+indContactName.error.lastName.required = Enter your last name
+indContactName.error.firstName.invalid = The first name must only include letters a to z, ampersands (&), apostrophes, backslashes, carets (^), grave accents (`), hyphens and spaces
+indContactName.error.lastName.invalid = The last name must only include letters a to z, ampersands (&), apostrophes, backslashes, carets (^), grave accents (`), hyphens and spaces
+indContactName.error.firstName.length = The first name must be 35 characters or less
+indContactName.error.lastName.length = The last name must be 35 characters or less
+indContactName.change.hidden = Change your name
+
+indIdentityConfirmed.title = We have confirmed your identity
+indIdentityConfirmed.heading = We have confirmed your identity
+
+indCouldNotConfirmIdentity.title = We could not confirm your identity
+indCouldNotConfirmIdentity.heading = We could not confirm your identity
+indCouldNotConfirmIdentity.p1 = The information you have entered does not match our records.
+indCouldNotConfirmIdentity.button = Try again
+
+indWhatIsYourNINumber.title = What is your National Insurance number?
+indWhatIsYourNINumber.heading = What is your National Insurance number?
+indWhatIsYourNINumber.checkYourAnswersLabel = Your National Insurance number
+indWhatIsYourNINumber.change.hidden = Change your National Insurance number
+indWhatIsYourNINumber.hint = It’s on your National Insurance card, benefit letter, payslip or P60 — for example, ‘QQ 12 34 56 C’.
+indWhatIsYourNINumber.error.required = Enter your National Insurance number
+indWhatIsYourNINumber.error.format.invalid = Enter your National Insurance number in the right format
+indWhatIsYourNINumber.error.invalid = Enter a real National Insurance number
+indWhatIsYourNINumber.error.length = Your National Insurance Number must be 9 characters or less
+
+businessNameWithoutID.title = What is the name of your business?
+businessNameWithoutID.heading = What is the name of your business?
+businessNameWithoutID.error.required = Enter the name of your business
+businessNameWithoutID.error.invalid = Business name must only include letters a to z, numbers 0 to 9, ampersands (&), apostrophes, backslashes, carets (^), grave accents (`), hyphens and spaces
+businessNameWithoutID.error.length = Business name must be 105 characters or less
+businessNameWithoutID.checkYourAnswersLabel = Business name
+businessNameWithoutID.change.hidden = Change business name
+
+businessWithIDName.checkYourAnswersLabel = Your business
+businessWithIDName.change.hidden = Change your business
+
+indDoYouHaveNINumber.title = Do you have a National Insurance number?
+indDoYouHaveNINumber.heading = Do you have a National Insurance number?
+indDoYouHaveNINumber.p1 = Find your National Insurance number (opens in new tab)
+indDoYouHaveNINumber.checkYourAnswersLabel = Do you have a National Insurance number?
+indDoYouHaveNINumber.change.hidden = Change if you have a National Insurance number
+indDoYouHaveNINumber.error.required = Select yes if you have a National Insurance number
+
+haveTradingName.title = Does your business trade under a different name?
+haveTradingName.heading = Does your business trade under a different name?
+haveTradingName.error.required = Select yes if your business trades under a different name
+
+businessTradingNameWithoutID.title = What is the trading name of your business?
+businessTradingNameWithoutID.heading = What is the trading name of your business?
+businessTradingNameWithoutID.checkYourAnswersLabel = Trading name
+businessTradingNameWithoutID.error.required = Enter the trading name of your business
+businessTradingNameWithoutID.error.invalid = Trading name must only include letters a to z, numbers 0 to 9, ampersands (&), apostrophes, backslashes, carets (^), grave accents (`), hyphens and spaces
+businessTradingNameWithoutID.error.length = Trading name must be 80 characters or less
+businessTradingNameWithoutID.change.hidden = Change trading name
+
+addressWithoutId.business.title = What is the main address of your business?
+addressWithoutId.business.heading = What is the main address of your business?
+addressWithoutId.individual.title = What is your address?
+addressWithoutId.individual.heading = What is your address?
+addressWithoutId.addressLine1 = Address line 1
+addressWithoutId.addressLine2 = Address line 2 (optional)
+addressWithoutId.addressLine3 = City
+addressWithoutId.addressLine4.region = Region (optional)
+addressWithoutId.addressLine4.county = County (optional)
+addressWithoutId.postCode.optional = Postcode (optional)
+addressWithoutId.postCode.mandatory = Postcode
+addressWithoutId.postCode.ifApplicable = Postcode (if applicable)
+addressWithoutId.countryCode = Country
+
+addressWithoutId.individual.checkYourAnswersLabel = Your home address
+addressWithoutId.individual.change.hidden = Change your home address
+
+addressWithoutId.business.checkYourAnswersLabel = Main business address
+addressWithoutId.business.change.hidden = Change main business address
+
+addressWithoutId.error.addressLine1.required = Enter address line 1
+addressWithoutId.error.addressLine3.required = Enter city
+addressWithoutId.error.country.required = Select country
+addressWithoutId.error.addressLine1.length = Address line 1 must be 35 characters or less
+addressWithoutId.error.addressLine2.length = Address line 2 must be 35 characters or less
+addressWithoutId.error.addressLine3.length = City must be 35 characters or less
+addressWithoutId.error.addressLine4.region.length = Region must be 35 characters or less
+addressWithoutId.error.addressLine4.county.length = County must be 35 characters or less
+addressWithoutId.error.addressLine1.invalid = Address line 1 must only include letters a to z, numbers 0 to 9, apostrophes, commas, ampersands (&), hyphens, full stops and spaces
+addressWithoutId.error.addressLine2.invalid = Address line 2 must only include letters a to z, numbers 0 to 9, apostrophes, commas, ampersands (&), hyphens, full stops and spaces
+addressWithoutId.error.addressLine3.invalid = City must only include letters a to z, numbers 0 to 9, apostrophes, commas, ampersands (&), hyphens, full stops and spaces
+addressWithoutId.error.addressLine4.region.invalid = Region must only include letters a to z, numbers 0 to 9, apostrophes, commas, ampersands (&), hyphens, full stops and spaces
+addressWithoutId.error.addressLine4.county.invalid = County must only include letters a to z, numbers 0 to 9, apostrophes, commas, ampersands (&), hyphens, full stops and spaces
+addressWithoutId.error.postcode.required = Enter a postcode, like AA1 1AA
+addressWithoutId.error.postcode.required.business = Enter a postcode for Jersey, Guernsey or the Isle of Man, like AA1 1AA
+addressWithoutId.error.postcode.length = Postcode must be 10 characters or less
+addressWithoutId.error.postcode.invalid = Enter a real postcode
+addressWithoutId.error.postcode.chars = Postcode must only include letters a to z and numbers 0 to 9
+
+unauthorisedStandardUser.title = You’re currently unable to access this service
+unauthorisedStandardUser.heading = You’re currently unable to access this service
+unauthorisedStandardUser.paragraph1 = You have signed in as a standard user. Someone in your organisation with an administrator role must give you permission to access this service.
+unauthorisedStandardUser.subheading = What your administrator must do next
+unauthorisedStandardUser.bullet1 = Sign in with their Government Gateway details.
+unauthorisedStandardUser.bullet2 = Register for the CRS and FATCA service, if they have not done so already.
+unauthorisedStandardUser.bullet3 = Give you permission to use this service through the tax and scheme management service.
+unauthorisedStandardUser.paragraph2 = If your administrator does not have the link for the tax and scheme management service, then you can share this link with them. The link will only work for your administrator:
+unauthorisedStandardUser.link = www.tax.service.gov.uk/tax-and-scheme-management/services
+unauthorisedStandardUser.paragraph3 = Once your administrator has completed these steps, you will then be able to sign in with your own Government Gateway details to use this service.
+
+pageNotFound.title = Page not found
+pageNotFound.heading = Page not found
+pageNotFound.p1 = If you typed the web address, check it is correct.
+pageNotFound.p2 = If you pasted the web address, check you copied the entire address.
+pageNotFound.link = You can email {0} if you have any questions about this service.
+
+enquiries.email = aeoi.enquiries@hmrc.gov.uk
+
+indWhatIsYourName.title = What is your name?
+indWhatIsYourName.heading = What is your name?
+indWhatIsYourName.firstName = Given name
+indWhatIsYourName.lastName = Family name
+indWhatIsYourName.checkYourAnswersLabel = Your name
+indWhatIsYourName.change.hidden = Change your name
+indWhatIsYourName.error.firstName.required = Enter your given name
+indWhatIsYourName.error.firstName.invalid = The given name must only include letters a to z, ampersands (&), apostrophes, backslashes, carets (^), grave accents (`), hyphens and spaces
+indWhatIsYourName.error.firstName.length = The given name must be 35 characters or less
+indWhatIsYourName.error.lastName.required = Enter your family name
+indWhatIsYourName.error.lastName.invalid = The family name must only include letters a to z, ampersands (&), apostrophes, backslashes, carets (^), grave accents (`), hyphens and spaces
+indWhatIsYourName.error.lastName.length = 	The family name must be 35 characters or less
+
+indWhatIsYourPostcode.title = What is your postcode?
+indWhatIsYourPostcode.heading = What is your postcode?
+indWhatIsYourPostcode.p1 = Enter your postcode to find your address automatically.
+indWhatIsYourPostcode.checkYourAnswersLabel = What is your postcode?
+indWhatIsYourPostcode.button = Find address
+indWhatIsYourPostcode.manualLink = Or enter the address manually
+indWhatIsYourPostcode.error.required = Enter a postcode, like AA1 1AA
+indWhatIsYourPostcode.error.length = Postcode must be 10 characters or less
+indWhatIsYourPostcode.error.invalid = Enter a real postcode or enter the address manually
+indWhatIsYourPostcode.error.chars = Postcode must only include letters a to z and numbers 0 to 9
+indWhatIsYourPostcode.error.notFound = No addresses found — enter a different postcode or enter the address manually
+
+doYouHaveUniqueTaxPayerReference.title = Do you have a Unique Taxpayer Reference (UTR)?
+doYouHaveUniqueTaxPayerReference.checkYourAnswersLabel = Do you have a Unique Taxpayer Reference?
+doYouHaveUniqueTaxPayerReference.change.hidden = Change if you have a Unique Taxpayer Reference
+doYouHaveUniqueTaxPayerReference.heading = Do you have a Unique Taxpayer Reference (UTR)?
+doYouHaveUniqueTaxPayerReference.link = Find your UTR (opens in new tab)
+doYouHaveUniqueTaxPayerReference.error.required = Select yes if you have a Unique Taxpayer Reference
+
+
+businessName.title.llp = What is the registered name of your business?
+businessName.title.partner = What is the partnership name?
+businessName.title.unincorporated = What is the name of your organisation?
+businessName.heading.llp = What is the registered name of your business?
+businessName.heading.partner = What is the partnership name?
+businessName.heading.unincorporated = What is the name of your organisation?
+businessName.hint.llp = This is the registered name on your incorporation certificate. Enter the name in full as it appears on the certificate.
+businessName.hint.partner = This is the name that you registered with HMRC.
+businessName.hint.unincorporated = This is the name on your governing document.
+businessName.error.required.llp = Enter the registered name of your business
+businessName.error.required.partner = Enter the partnership name
+businessName.error.required.unincorporated = Enter the name of your organisation
+businessName.error.length.llp = Business name must be 105 characters or less
+businessName.error.length.partner = Partnership name must be 105 characters or less
+businessName.error.length.unincorporated = Organisation name must be 105 characters or less
+businessName.error.invalid.llp = Business name must only include letters a to z, numbers 0 to 9, ampersands (&), apostrophes, backslashes, carets (^), grave accents (`), hyphens and spaces
+businessName.error.invalid.partner = Partnership name must only include letters a to z, numbers 0 to 9, ampersands (&), apostrophes, backslashes, carets (^), grave accents (`), hyphens and spaces
+businessName.error.invalid.unincorporated = Organisation name must only include letters a to z, numbers 0 to 9, ampersands (&), apostrophes, backslashes, carets (^), grave accents (`), hyphens and spaces
+
+
+registeredAddressInUK.title = Is your registered address in the UK?
+registeredAddressInUK.heading = Is your registered address in the UK?
+registeredAddressInUK.checkYourAnswersLabel = Is your registered business address in the UK?
+registeredAddressInUK.change.hidden = Change whether your registered address is in the UK
+registeredAddressInUK.error.required = Select yes if your registered address is in the UK
+
+reporterType.title = What are you registering as?
+reporterType.heading = What are you registering as?
+reporterType.checkYourAnswersLabel = What are you registering as?
+reporterType.change.hidden = Change what you are registering as
+reporterType.error.required = Select what you are registering as
+reporterType.limited = Limited company
+reporterType.partnership = Partnership
+reporterType.limitedPartnership = Limited partnership or limited liability partnership
+reporterType.unincorporatedAssociation = Unincorporated association or trust
+reporterType.sole = Sole trader
+reporterType.individual = An individual not connected to a business
+
+whatIsYourName.title = What is your name?
+whatIsYourName.heading = What is your name?
+whatIsYourName.firstName = First name
+whatIsYourName.lastName = Last name
+whatIsYourName.p1 = This is so we can match your details such as UTR, name and date of birth to our records.
+whatIsYourName.checkYourAnswersLabel = Your name
+whatIsYourName.change.hidden = Change your name
+whatIsYourName.error.firstName.required = Enter your first name
+whatIsYourName.error.firstName.invalid = The first name must only include letters a to z, ampersands (&), apostrophes, backslashes, carets (^), grave accents (`), hyphens and spaces
+whatIsYourName.error.firstName.length = The first name must be 35 characters or less
+whatIsYourName.error.lastName.required = Enter your last name
+whatIsYourName.error.lastName.invalid = The last name must only include letters a to z, ampersands (&), apostrophes, backslashes, carets (^), grave accents (`), hyphens and spaces
+whatIsYourName.error.lastName.length = The last name must be 35 characters or less
+
+dateOfBirthWithoutId.title = What is your date of birth?
+dateOfBirthWithoutId.heading = What is your date of birth?
+dateOfBirthWithoutId.hint = For example, 31 3 1980.
+dateOfBirthWithoutId.checkYourAnswersLabel = Your date of birth
+dateOfBirthWithoutId.change.hidden = Change your date of birth
+
+isThisYourAddress.title = Is this your address?
+isThisYourAddress.heading = Is this your address?
+isThisYourAddress.error.required = Select yes if this is your address
+
+
+whatIsYourUTR.checkYourAnswersLabel = whatIsYourUTR
+whatIsYourUTR.hint = Your UTR can be 10 or 13 digits long.
+whatIsYourUTR.soleTrader.title = Your Self Assessment Unique Taxpayer Reference (UTR)
+whatIsYourUTR.soleTrader.hint = What is your Self Assessment UTR?
+whatIsYourUTR.soleTrader.paragraph = You can find it in your Personal Tax Account, the HMRC app or on tax returns and other documents from HMRC. It might be called ‘reference’, ‘UTR’ or ‘official use’.
+whatIsYourUTR.soleTrader.link = Get more help to find your UTR (opens in new tab)
+whatIsYourUTR.soleTrader.subtitle = What is your Self Assessment UTR?
+
+whatIsYourUTR.partnership.title = Your Partnership Unique Taxpayer Reference (UTR)
+whatIsYourUTR.partnership.hint = What is your Partnership UTR?
+whatIsYourUTR.partnership.paragraph = You can find it in your Business Tax Account, the HMRC app or on tax returns and other documents from HMRC. It might be called ‘reference’, ‘UTR’ or ‘official use’.
+whatIsYourUTR.partnership.link = Get more help to find your UTR (opens in new tab)
+whatIsYourUTR.partnership.subtitle = What is your Partnership UTR?
+
+whatIsYourUTR.corporation.title = Your Corporation Tax Unique Taxpayer Reference (UTR)
+whatIsYourUTR.corporation.hint = What is your Corporation Tax UTR?
+whatIsYourUTR.corporation.paragraph = It will be on tax returns and other letters about Corporation Tax. It might be called ‘reference’, ‘UTR’ or ‘official use’.
+whatIsYourUTR.corporation.link = Ask for a copy of your Corporation Tax UTR (opens in new tab)
+whatIsYourUTR.corporation.subtitle = What is your Corporation Tax UTR?
+
+whatIsYourUTR.error.required = Enter your Unique Taxpayer Reference
+whatIsYourUTR.error.invalidFormat = Enter the Unique Taxpayer Reference in the right format
+whatIsYourUTR.error.invalid = Unique Taxpayer Reference must only include numbers 0 to 9
+whatIsYourUTR.change.hidden = WhatIsYourUTR
+
+
+sessionExpired.title = For your security, we signed you out
+sessionExpired.heading = For your security, we signed you out
+sessionExpired.guidance = We did not save your answers.
+sessionExpired.link = {0}
+
+signedOut.title = For your security, we signed you out
+signedOut.heading = For your security, we signed you out
+signedOut.guidance = We did not save your answers.
+signedOut.link = Sign in again using Government Gateway
+
+informationMissing.title = Some information is missing
+informationMissing.heading = Some information is missing
+informationMissing.p1 = You must provide this information to register.
+
+contactDetailsMissing.title = Some information is missing
+contactDetailsMissing.heading = Some information is missing
+contactDetailsMissing.p1 = You must provide this information to update your contact details.
+
+preRegistered.title = Your organisation is already registered to use this service
+preRegistered.heading = Your organisation is already registered to use this service
+preRegistered.help = You can email {0} if you’re having problems accessing the service.
+preRegistered.help.linkLocation = mailto:aeoi.enquiries@hmrc.gov.uk
+preRegistered.withID.information = Your administrator needs to give you permission to use the CRS and FATCA service through the tax and scheme management service.
+preRegistered.withID.information2 = If your administrator does not have the link for the tax and scheme management service, then you can share this link with them. The link will only work for your administrator:
+preRegistered.withID.information.link = www.tax.service.gov.uk/tax-and-scheme-management/services
+
+individualAlreadyRegistered.title = You are already registered to use this service
+individualAlreadyRegistered.heading = You are already registered to use this service
+individualAlreadyRegistered.p1 = You can access the service using the Government Gateway details that were used to register for CRS and FATCA.
+individualAlreadyRegistered.link = Sign in using Government Gateway
+individualAlreadyRegistered.p2 = You can email {0} if you’re having problems accessing the service.
+
+indSelectAddress.title = What is your address?
+indSelectAddress.heading = What is your address?
+indSelectAddress.checkYourAnswersLabel = Your home address
+indSelectAddress.change.hidden = Change your home address
+indSelectAddress.error.required = Select your address or enter it manually
+indSelectAddress.p1 = Select from the list or {0}.
+indSelectAddress.p2 = enter your address manually
+
+isThisYourBusiness.title = Is this your business?
+isThisYourBusiness.heading = Is this your business?
+isThisYourBusiness.checkYourAnswersLabel = isThisYourBusiness
+isThisYourBusiness.error.required = Select yes if this is your business
+
+businessNotIdentified.title = The details you entered did not match our records
+businessNotIdentified.heading = The details you entered did not match our records
+businessNotIdentified.p1 = To help us find your business, check if you have entered the right details.
+businessNotIdentified.subheading1 = Try entering your UTR again
+businessNotIdentified.p2 = If entering your UTR again does not work, you can
+businessNotIdentified.p2.link = find a lost UTR
+businessNotIdentified.subheading2 = Try entering your business name again
+businessNotIdentified.sole.subheading2 = Try entering your name again
+businessNotIdentified.limited.p3 = Check if you have entered your full business name as it was registered. You can find the registered business name on your incorporation certificate.
+businessNotIdentified.partnership.p3 = Check if you have entered your full business name as it was registered.
+businessNotIdentified.unincorporated.p3 = Check if you have entered your full business name as it was registered. You can find the registered business name on your governing document.
+businessNotIdentified.soleTrader.p3 = Check if you have entered your first name and last name correctly.
+businessNotIdentified.p3b = Some businesses:
+businessNotIdentified.bullet1 = are known by a trading name that is different to the registered name
+businessNotIdentified.bullet2 = use abbreviations in their trading or registered name
+businessNotIdentified.limitedCompany.p4 = You can also
+businessNotIdentified.limitedCompany.p4.link = search the Companies House register for your company name (opens in new tab)
+businessNotIdentified.partnership.p4 = If your business is registered with Companies House, you can
+businessNotIdentified.partnership.p4.link = search the register for your company name (opens in new tab)
+businessNotIdentified.subheading3 = Contact HMRC to help us find your business
+businessNotIdentified.p5 = If you have checked and entered your UTR and business name again and we still cannot find your business, then email
+businessNotIdentified.sole.p5 = If you have checked and entered your UTR and name again and we still cannot find your business, then email
+businessNotIdentified.p5b = for help.
+businessNotIdentified.button = Try again
+
+businessAlreadyRegistered.title = Your organisation is already registered to use this service
+businessAlreadyRegistered.heading = Your organisation is already registered to use this service
+businessAlreadyRegistered.withoutID.information = You can access the service using the Government Gateway details that were used to register for CRS and FATCA.
+businessAlreadyRegistered.withoutID.GGLink = Sign in using Government Gateway
+businessAlreadyRegistered.withID.information = You will need to contact your administrator to give you access via the ‘Manage account’ settings within their business tax account.
+businessAlreadyRegistered.help = You can email {0} if you’re having problems accessing the service.
+
+individualAlreadyRegistered.title = You are already registered to use this service
+individualAlreadyRegistered.heading = You are already registered to use this service
+individualAlreadyRegistered.p1 = You can access the service using the same Government Gateway details that you used to register for CRS and FATCA.
+individualAlreadyRegistered.link = Sign in using Government Gateway
+individualAlreadyRegistered.p2 = You can email {0} if you’re having problems accessing the service.
+
+differentBusiness.title = You’re unable to use this service with this Government Gateway user ID
+differentBusiness.heading = You’re unable to use this service with this Government Gateway user ID
+differentBusiness.p1 = You have signed in with a Government Gateway user ID that is linked to the following business details:
+differentBusiness.p2 = If you want to register a different organisation for CRS and FATCA, you must {0}.
+differentBusiness.p3 = You have signed in with a Government Gateway user ID that is linked to different business details.
+differentBusiness.link = sign in with the Government Gateway user ID for the organisation you wish to register
+
+unableToChangeBusiness.title = You’re unable to change your business details
+unableToChangeBusiness.heading = You’re unable to change your business details
+unableToChangeBusiness.p1 = You have signed in with a Government Gateway user ID that is linked to the following business details:
+unableToChangeBusiness.p2 = If you want to register a different organisation for CRS and FATCA, you must {0}.
+unableToChangeBusiness.p3 = You have signed in with a Government Gateway user ID that is linked to different business details.
+unableToChangeBusiness.link = sign in with the Government Gateway user ID for the organisation you wish to register
+
+thereIsAProblem.title = Sorry, there is a problem with the service
+thereIsAProblem.heading = Sorry, there is a problem with the service
+thereIsAProblem.paragraph.1 = Try again later.
+thereIsAProblem.paragraph.2.a = You can email {0} if you need to contact someone about your CRS or FATCA reporting.
+
+indWhereDoYouLive.title = Do you live in the UK, Jersey, Guernsey or the Isle of Man?
+indWhereDoYouLive.heading = Do you live in the UK, Jersey, Guernsey or the Isle of Man?
+indWhereDoYouLive.checkYourAnswersLabel = Do you live in the UK, Jersey, Guernsey or the Isle of Man?
+indWhereDoYouLive.error.required = 	Select yes if you live in the UK, Jersey, Guernsey or the Isle of Man
+
+checkYourAnswers.title = Check your answers before you register for CRS and FATCA
+checkYourAnswers.heading = Check your answers before you register for CRS and FATCA
+checkYourAnswers.individualDetails.h2 = Your details
+checkYourAnswers.businessDetails.h2 = Business details
+checkYourAnswers.firstContact.h2 = First contact
+checkYourAnswers.secondContact.h2 = Second contact
+checkYourAnswers.contactDetails.h2 = Contact details
+checkYourAnswers.information.h2 = Now send your registration for CRS and FATCA
+checkYourAnswers.information.p = By sending these details, you are confirming that the information is correct and complete to the best of your knowledge.
+checkYourAnswers.button = Confirm and send
+
+individualChangeContactDetails.title = individualChangeContactDetails
+individualChangeContactDetails.heading = individualChangeContactDetails
+
+individualEmail.title = What is your email address?
+individualEmail.heading = What is your email address?
+individualEmail.p1 = We will use this email address to send confirmation of your reports or if we have any questions about them.
+individualEmail.checkYourAnswersLabel = Email address
+individualEmail.error.required = Enter your email address
+individualEmail.error.length = The email address must be 132 characters or less
+individualEmail.error.invalid = Enter an email address in the right format, like yourname@example.com
+individualEmail.change.hidden = Change email address
+
+individualHavePhone.title = Can we contact you by telephone?
+individualHavePhone.heading = Can we contact you by telephone?
+individualHavePhone.checkYourAnswersLabel = Can we contact you by telephone
+individualHavePhone.p1 = We will call if we have any questions about your reports.
+individualHavePhone.error.required = Select yes if we can contact you by telephone
+
+individualPhone.title = What is your telephone number?
+individualPhone.heading = What is your telephone number?
+individualPhone.checkYourAnswersLabel = Telephone number
+individualPhone.hint = For international numbers, include the country code.
+individualPhone.error.required = Enter your telephone number
+individualPhone.error.length = The telephone number must be 24 characters or less
+individualPhone.error.invalid =  The telephone number must only include numbers 0 to 9 and a plus sign, like 01632 960 001, 07700 900 982 or +44 808 157 0192
+individualPhone.change.hidden = Change telephone number
+
+organisationContactName.title = What is the name of the person or team we should contact?
+organisationContactName.heading = What is the name of the person or team we should contact?
+organisationContactName.hint = For example, ‘Ashley Smith’ or ‘Tax team’.
+organisationContactName.checkYourAnswersLabel = First contact name
+organisationContactName.error.required = Enter a name for the first contact
+organisationContactName.error.invalid = The name must only include letters a to z, numbers 0 to 9, ampersands (&), apostrophes, backslashes, carets (^), grave accents (`), hyphens and spaces
+organisationContactName.error.length = The name must be 35 characters or less
+organisationContactName.change.hidden = Change first contact name
+
+organisationContactEmail.heading = What is the email address for {0}?
+organisationContactEmail.title = What is the email address for the first contact?
+organisationContactEmail.checkYourAnswersLabel = First contact email address
+organisationContactEmail.p1 = We will use this email address to send confirmation of your reports or if we have any questions about them.
+organisationContactEmail.error.required = Enter an email address for the first contact
+organisationContactEmail.error.length = The email address must be 132 characters or less
+organisationContactEmail.error.invalid = Enter an email address in the right format, like yourname@example.com
+organisationContactEmail.change.hidden = Change first contact email address
+
+organisationContactHavePhone.title = Can we contact your first contact by telephone?
+organisationContactHavePhone.heading = Can we contact {0} by telephone?
+organisationContactHavePhone.p1 = We will call if we have any questions about your reports.
+organisationContactHavePhone.error.required = Select yes if they can be contacted by telephone
+
+organisationContactPhone.title = What is the telephone number for the first contact?
+organisationContactPhone.heading = What is the telephone number for {0}?
+organisationContactPhone.hint = For international numbers, include the country code.
+organisationContactPhone.checkYourAnswersLabel = First contact telephone number
+organisationContactPhone.error.required = Enter a telephone number for the first contact
+organisationContactPhone.error.length = The telephone number must be 24 characters or less
+organisationContactPhone.error.invalid = The telephone number must only include numbers 0 to 9 and a plus sign, like 01632 960 001, 07700 900 982 or +44 808 157 0192
+organisationContactPhone.change.hidden = Change first contact telephone number
+
+organisationHaveSecondContact.title = Is there someone else we can contact if your first contact is not available?
+organisationHaveSecondContact.heading = Is there someone else we can contact if {0} is not available?
+organisationHaveSecondContact.p1 = This can be a team mailbox or another contact.
+organisationHaveSecondContact.checkYourAnswersLabel = Do you have a second contact?
+organisationHaveSecondContact.change.hidden = Change if you have a second contact
+organisationHaveSecondContact.error.required = Select yes if there is someone else we can contact
+
+organisationSecondContactEmail.title = What is the email address for the second contact?
+organisationSecondContactEmail.heading = What is the email address for {0}?
+organisationSecondContactEmail.p1 = We will use this email address to send confirmation of your reports or if we have any questions about them.
+organisationSecondContactEmail.checkYourAnswersLabel = Second contact email address
+organisationSecondContactEmail.error.required = Enter an email address for the second contact
+organisationSecondContactEmail.error.length = The email address must be 132 characters or less
+organisationSecondContactEmail.error.invalid = Enter an email address in the right format, like yourname@example.com
+organisationSecondContactEmail.change.hidden = Change second contact email address
+
+organisationSecondContactName.title = What is the name of the person or team we should contact?
+organisationSecondContactName.heading = What is the name of the person or team we should contact?
+organisationSecondContactName.hint = For example, ‘Ashley Smith’ or ‘Tax team’.
+organisationSecondContactName.checkYourAnswersLabel = Second contact name
+organisationSecondContactName.error.required = Enter a name for the second contact
+organisationSecondContactName.error.invalid = The name must only include letters a to z, numbers 0 to 9, ampersands (&), apostrophes, backslashes, carets (^), grave accents (`), hyphens and spaces
+organisationSecondContactName.error.length = The name must be 35 characters or less
+organisationSecondContactName.change.hidden = Change second contact name
+
+organisationSecondContactHavePhone.title = Can we contact your second contact by telephone?
+organisationSecondContactHavePhone.heading = Can we contact {0} by telephone?
+organisationSecondContactHavePhone.p1 = We will call if we have any questions about your reports.
+organisationSecondContactHavePhone.error.required = Select yes if they can be contacted by telephone
+
+organisationSecondContactPhone.title = What is the telephone number for the second contact?
+organisationSecondContactPhone.heading = What is the telephone number for {0}?
+organisationSecondContactPhone.hint = For international numbers, include the country code.
+organisationSecondContactPhone.checkYourAnswersLabel = Second contact telephone number
+organisationSecondContactPhone.error.required = Enter a telephone number for the second contact
+organisationSecondContactPhone.error.invalid = The telephone number must only include numbers 0 to 9 and a plus sign, like 01632 960 001, 07700 900 982 or +44 808 157 0192
+organisationSecondContactPhone.error.length = The telephone number must be 24 characters or less
+organisationSecondContactPhone.change.hidden = Change second contact telephone number
+
+registrationConfirmation.title = Registration successful
+registrationConfirmation.heading = Registration successful
+registrationConfirmation.subheading.1 = What you should do next
+registrationConfirmation.para.1 = To send CRS and FATCA reports, you must {0}.
+registrationConfirmation.para.2 = You will need to provide your CRS and FATCA user ID in every file you send to HMRC.
+registrationConfirmation.subheading.2 = Before you go
+registrationConfirmation.para.3 = Your feedback helps us make our service better.
+registrationConfirmation.para.4 = {0} to share your feedback on this service.
+registrationConfirmation.link.survey = Take a short survey
+registrationConfirmation.link.addFI = add a financial institution
+
+detailsUpdated.title = Contact details updated
+detailsUpdated.heading = Contact details updated
+detailsUpdated.para.1 = We will use your new details if we need to contact you.
+detailsUpdated.link.text = Back to manage your CRS and FATCA reports
+
+individualDetails.title = individualDetails
+individualDetails.heading = individualDetails
+
+organisationDetails.title = organisationDetails
+organisationDetails.heading = organisationDetails
+
+changeOrganisationContactDetails.title = Change your contact details for your organisation
+checkOrganisationContactDetails.title = Check your contact details for your organisation
+changeOrganisationContactDetails.heading = Change your contact details for your organisation
+checkOrganisationContactDetails.heading = Check your contact details for your organisation
+changeOrganisationContactDetails.primary.heading = First contact
+changeOrganisationContactDetails.secondary.heading = Second contact
+
+changeContactDetails.nowSendContactDetails = Now send your updated contact details
+changeContactDetails.confirmingInformation = By sending these details, you are confirming that the information is correct and complete to the best of your knowledge.
+changeContactDetails.confirmAndSend = Confirm and send
+
+changeIndividualContactDetails.title = Change your contact details
+checkIndividualContactDetails.title = Check your contact details
+changeIndividualContactDetails.heading = Change your contact details
+checkIndividualContactDetails.heading = Check your contact details
+
+pageUnavailable.title = This page is no longer available
+pageUnavailable.heading = This page is no longer available
+pageUnavailable.link.text = Back to manage your CRS and FATCA reports
+

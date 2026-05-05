@@ -1,0 +1,258 @@
+{
+  "info": {
+    "_postman_id": "962371d4-cea9-4297-8d57-5b390eef9560",
+    "name": "CBC Register",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "5457072"
+  },
+  "item": [
+    {
+      "name": "Auth_Login",
+      "item": [
+        {
+          "name": "POST Auth Details",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var responseBody = cheerio.load(pm.response.text());",
+                  "var bearerToken = responseBody('td[data-session-id=\"authToken\"]').text().replace(\"Bearer\", \"\").replace(/\\s/g, \"\");",
+                  "",
+                  "pm.environment.set(\"bearer_token\", bearerToken);",
+                  "",
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "tests[\"Body does not contain: Bearer token not supplied\"] = responseBody !== \"Bearer token not supplied\";"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text"
+              },
+              {
+                "key": "",
+                "value": "",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "authorityId",
+                  "value": "",
+                  "type": "text"
+                },
+                {
+                  "key": "redirectionUrl",
+                  "value": "{{auth}}/auth-login-stub/session",
+                  "type": "text"
+                },
+                {
+                  "key": "credentialStrength",
+                  "value": "weak",
+                  "type": "text"
+                },
+                {
+                  "key": "confidenceLevel",
+                  "value": "50",
+                  "type": "text"
+                },
+                {
+                  "key": "affinityGroup",
+                  "value": "Organisation",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{auth}}/auth-login-stub/gg-sign-in",
+              "host": [
+                "{{auth}}"
+              ],
+              "path": [
+                "auth-login-stub",
+                "gg-sign-in"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+      {
+      "name": "CBC Registration",
+      "item": [
+        {
+          "name": "RegisterWithId",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {}
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearer_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"registerWithIDRequest\": {\n        \"requestCommon\": {\n            \"receiptDate\": \"\",\n            \"regime\": \"CBC\",\n            \"acknowledgementReference\": \"\"\n        },\n        \"requestDetail\": {\n            \"IDType\": \"UTR\",\n            \"IDNumber\": \"1234567890\",\n            \"requiresNameMatch\": true,\n            \"isAnAgent\": false,\n            \"organisation\": {\n                \"organisationName\": \"cbc company\",\n                \"organisationType\": \"Not Specified\"\n            }\n        }\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{register_cbc_backend}}/registration/utr",
+              "host": [
+                "{{register_cbc_backend}}"
+              ],
+              "path": [
+                "registration",
+                "utr"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "RegisterWithoutId",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {}
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearer_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"registerWithoutIDRequest\": {\n        \"requestCommon\": {\n            \"receiptDate\": \"\",\n            \"regime\": \"CBC\",\n            \"acknowledgementReference\": \"\"\n        },\n        \"requestDetail\": {\n            \"organisation\": {\n                \"organisationName\": \"organisation\"\n            },\n            \"address\": {\n                \"addressLine1\": \"\",\n                \"addressLine3\": \"\",\n                \"countryCode\": \"GB\"\n            },\n            \"contactDetails\": {}\n        }\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{register_cbc_backend}}/registration/noId",
+              "host": [
+                "{{register_cbc_backend}}"
+              ],
+              "path": [
+                "registration",
+                "noId"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearer_token}}",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": []
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ]
+}

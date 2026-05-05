@@ -1,0 +1,37 @@
+spin_manifest_version = 2
+
+[application]
+name = "blnk-finance-app"
+version = "0.1.0"
+authors = ["admin <thando.mafela@gmail.com>"]
+description = "Application exposing blnk api via a spin app"
+
+[variables]
+blnk_base_uri = { default = "http://localhost:5001"}
+
+[[trigger.http]]
+route = "/api/ledger/..."
+component = "ledger"
+
+[component.ledger.variables]
+blnk_base_uri = "{{ blnk_base_uri }}"
+
+[component.ledger]
+source = "ledger/target/wasm32-wasip1/release/ledger.wasm"
+allowed_outbound_hosts = ["http://localhost:5001"]
+[component.ledger.build]
+command = "cargo build --target wasm32-wasip1 --release"
+workdir = "ledger"
+watch = ["src/**/*.rs", "Cargo.toml"]
+
+[[trigger.http]]
+route = "/api/balance"
+component = "balances"
+
+[component.balances]
+source = "balances/target/wasm32-wasip1/release/balances.wasm"
+allowed_outbound_hosts = ["http://localhost:5001"]
+[component.balances.build]
+command = "cargo build --target wasm32-wasip1 --release"
+workdir = "balances"
+watch = ["src/**/*.rs", "Cargo.toml"]

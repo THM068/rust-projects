@@ -1,0 +1,10 @@
+[workspace]
+members = [
+    "cli",
+    "config",
+    "blnk-client",
+    "web",
+    "macros"
+]
+resolver = "2"
+default-members = ["web"]

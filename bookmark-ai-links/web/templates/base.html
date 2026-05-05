@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:hx-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/css/app.css">
+
+</head>
+<body class="pt-16">
+
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-800 text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a class="text-white text-xl font-bold" href="/">Bookmark App</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="flex items-center space-x-4">
+                        <a href="/" class="px-3 py-2 rounded-md text-sm font-medium bg-gray-900 text-white">Home</a>
+                        <a href="/about" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
+                        <a href="/contact" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="block text-gray-300 hover:text-white focus:outline-none">
+                        <span class="block w-6 h-0.5 my-1 bg-white"></span>
+                        <span class="block w-6 h-0.5 my-1 bg-white"></span>
+                        <span class="block w-6 h-0.5 my-1 bg-white"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 pt-10">
+        {% block main %}
+        {% endblock %}
+    </div>
+
+    <script src="/static/js/htmx.min.js"></script>
+
+</body>
+</html>

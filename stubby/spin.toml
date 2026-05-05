@@ -1,0 +1,19 @@
+spin_manifest_version = 2
+
+[application]
+name = "stubby"
+version = "0.1.0"
+authors = ["admin <thando.mafela@gmail.com>"]
+description = ""
+
+[[trigger.http]]
+route = "/..."
+component = "mocker-app"
+
+[component.mocker-app]
+source = "mocker-app/target/wasm32-wasip1/release/mocker_app.wasm"
+allowed_outbound_hosts = []
+[component.mocker-app.build]
+command = "cargo build --target wasm32-wasip1 --release"
+workdir = "mocker-app"
+watch = ["src/**/*.rs", "Cargo.toml"]

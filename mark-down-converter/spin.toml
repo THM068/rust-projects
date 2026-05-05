@@ -1,0 +1,19 @@
+spin_manifest_version = 2
+
+[application]
+name = "mark-down-converter"
+version = "0.1.0"
+authors = ["admin <thando.mafela@gmail.com>"]
+description = "converts markdown to html"
+
+[[trigger.http]]
+route = "/..."
+component = "api"
+
+[component.api]
+source = "api/target/wasm32-wasip1/release/api.wasm"
+allowed_outbound_hosts = []
+[component.api.build]
+command = "cargo build --target wasm32-wasip1 --release"
+workdir = "api"
+watch = ["src/**/*.rs", "Cargo.toml"]

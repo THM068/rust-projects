@@ -1,0 +1,2 @@
+[alias]
+generate = ["run", "--package", "wi-taxi-api-cli", "--bin", "generate", "--"]

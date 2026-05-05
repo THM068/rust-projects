@@ -1,0 +1,78 @@
+@*
+ * Copyright 2024 HM Revenue & Customs
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *@
+
+@import config.FrontendAppConfig
+
+@this(
+    layout: templates.Layout,
+    link: components.Link,
+    govukButton: GovukButton,
+    appConfig: FrontendAppConfig
+)
+
+@(showRecentFiles: Boolean, cbcID: String, isAgent: Boolean)(implicit request: RequestHeader, messages: Messages)
+
+@layout(
+    pageTitle    = titleNoForm(messages("index.title")),
+    showBackLink = false,
+    showAgentHeader = true
+) {
+
+    <h1 class="govuk-heading-l">@messages("index.heading")</h1>
+
+    <p class="govuk-body">@Html(messages("index.p1"))</p>
+
+    @if(isAgent) {
+        <p class="govuk-body">@messages("index.p2.agent")</p>
+
+        <p class="govuk-body">@messages("index.p3.withDetails")</p>
+
+        <ul class="govuk-list govuk-list--bullet">
+
+            @if(showRecentFiles) {
+                <li>@link(routes.FileStatusController.onPageLoad().url, "index.viewFileDetailsForClient")</li>
+            }
+
+            <li>@link(controllers.agent.routes.ChangeAgentContactDetailsController.onPageLoad().url, "index.changeAgentDetails")</li>
+
+            <li>@link(controllers.client.routes.ChangeClientContactDetailsController.onPageLoad().url, "index.changeClientDetails")</li>
+
+        </ul>
+    } else {
+        <p class="govuk-body">@messages("index.p2.org", cbcID)</p>
+
+        @if(showRecentFiles) {
+            <p class="govuk-body">@messages("index.p3.withDetails")</p>
+
+            <ul class="govuk-list govuk-list--bullet">
+
+                <li>@link(routes.FileStatusController.onPageLoad().url, "index.viewFileDetails")</li>
+
+                <li>@link(controllers.routes.ChangeContactDetailsController.onPageLoad().url, "index.changeDetails")</li>
+
+            </ul>
+        } else {
+            <p class="govuk-body">@Html(messages("index.p3.withoutDetails", link(routes.ChangeContactDetailsController.onPageLoad().url, "index.changeDetails")))</p>
+        }
+    }
+
+      @govukButton(
+      ButtonViewModel(Text(messages("index.upload")))
+      .withAttribute( "id" -> "submit")
+      .asLink(routes.UploadFileController.onPageLoad().url)
+      )
+        <p class="govuk-body">@Html(messages("index.p4", link(s"mailto:${appConfig.emailEnquiries}", appConfig.emailEnquiries)))</p>
+}

@@ -1,0 +1,21 @@
+stubs:
+  - name: "Get User"
+    request:
+      method: GET
+      path: "/api/users/123"
+    response:
+      status: 200
+      headers:
+        Content-Type: application/json
+      body: |
+        {"id": 123, "name": "Alice", "email": "alice@example.com"}
+
+  - name: "Create Order (with delay)"
+    request:
+      method: POST
+      path: "/api/orders"
+      body_contains: "premium"
+    response:
+      status: 201
+      delay_ms: 500
+      body: '{"id": "ord_999", "status": "created"}'

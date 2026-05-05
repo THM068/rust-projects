@@ -1,0 +1,10 @@
+HTTP/2 support means better performance and efficiency: 
+multiplexed requests on a single connection, 
+lower latency, and improved network utilization. 
+For developers, the upgrade is transparent — just use th
+e existing outbound HTTP interface in Spin, and Spin will 
+negotiate HTTP/2 when the server supports it. 
+No configuration changes are needed. 
+This step makes Spin an even more capable platform for b
+uilding Wasm-powered, event-driven applications 
+that need to talk to the broader web at scale.

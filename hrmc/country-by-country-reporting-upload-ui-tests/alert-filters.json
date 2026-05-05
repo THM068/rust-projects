@@ -1,0 +1,32 @@
+{
+  "add": [
+    {
+      "reason": "This is outside our scope.",
+      "url": "http://localhost:9949/auth-login-stub/gg-sign-in",
+      "ruleId": 10202
+    },
+    {
+      "reason": "Anti-csrf tokens cannot be used with upscan.",
+      "url": "http://localhost:10024/send-a-country-by-country-report/upload-file",
+      "ruleId": 10202
+    },
+    {
+      "reason": "This is outside our scope.",
+      "url": "https://www.gov.uk/.*",
+      "urlIsRegex": "true",
+      "ruleId": 10202
+    },
+    {
+      "reason": "This is outside our scope.",
+      "url": "https://www.gov.uk/.*",
+      "urlIsRegex": "true",
+      "ruleId": 10098
+    },
+    {
+      "reason": "This is outside our scope.",
+      "url": "https://www.gov.uk/.*",
+      "urlIsRegex": "true",
+      "ruleId": 10021
+    }
+  ]
+}

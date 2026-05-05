@@ -1,0 +1,8 @@
+[llm_compute]
+type = "remote_http"
+url = "https://ai-app-dnijjnay.fermyon.app/"
+auth_token = "58e32a85-5d30-4ee0-a696-631ffc0755f"
+
+#spin cloud-gpu init
+#spin up --runtime-config-file <path/to/runtime/config>
+#spin cloud-gpu destroy

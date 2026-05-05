@@ -1,0 +1,2 @@
+[alias]
+generate = ["run", "--package", "newsletter-app-cli", "--bin", "generate", "--"]
